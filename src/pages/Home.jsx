@@ -1,32 +1,28 @@
 import React from 'react';
+import Banner from './Banner';
 // import useApps from '../hooks/useCards';
-import googlePlay from "../assets/fi_16076057.png"
-import appStore from "../assets/Group (1).png"
-import hero from "../assets/hero.png"
+import { Link, useLoaderData } from 'react-router';
+import AppCard from '../components/AppCard';
 
 const Home = () => {
-    // const {apps, loading, error} = useApps();
-    // const featured = products.slice(0, 6);
+    const apps = useLoaderData();
+    const featuredApps = apps.slice(0, 8);
     return (
-        <div className=''>
-            <div>
-                <h1 className='font-bold text-5xl text-center'>We Build <br /><span className='text-purple-500'>Productive</span> Apps</h1>
-            <p className='text-[#627382] text-center text-lg py-3'>At HERO.IO, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting.Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
+        <div>
+            <Banner></Banner>
+            <div className='text-center mt-8'>
+                <h1 className='font-bold text-4xl'>Trending Apps</h1>
+                <p className='text-gray-400 p-2'>Explore All Trending Apps on the Market developed by us</p>
             </div>
-            <div className='flex justify-center items-center gap-4'>
-                <button className='btn btn-outline'>
-                    <img src={googlePlay}></img>
-                    Google Play</button>
-                <button className='btn btn-outline'>
-                    <img src={appStore}></img>
-                    App Store</button>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6'>
+                {
+                    featuredApps.map(app=> <AppCard key={app.id} app={app}></AppCard>)
+                }
             </div>
-            <div className='flex justify-center items-center mt-6'>
-                <img className='w-[700px] h-[550px]' src={hero} alt="" srcset="" />
+            <div className='flex justify-center items-center mt-8'>
+                <Link to='/apps' className='btn text-white rounded-lg bg-gradient-to-l  from-[#9F62F2] to-[#632EE3] px-8 py-4'>Show All</Link>
             </div>
-            <div className='border-2 border-purple-600 h-[400px] bg-gradient-to-l  from-[#9F62F2] to-[#632EE3]'>
-
-            </div>
+            
         </div>
     );
 };

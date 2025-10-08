@@ -45,7 +45,7 @@ const Navbar = () => {
       </div>
       <div className="navbar-end">
         <button className="btn text-white rounded-lg bg-gradient-to-l  from-[#9F62F2] to-[#632EE3]">
-            <img src={buttonSign} alt="" srcset="" />
+            <img src={buttonSign} alt="" />
             Contribute</button>
       </div>
     </div>

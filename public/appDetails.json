@@ -178,5 +178,365 @@
       { "name": "4 star", "count": 2900 },
       { "name": "5 star", "count": 5430 }
     ]
+  },
+  {
+    "image": "https://picsum.photos/200/200?11",
+    "title": "CalmSpace",
+    "companyName": "MindFlow",
+    "id": 11,
+    "description": "CalmSpace helps you reduce stress and anxiety with guided meditations, nature sounds, and sleep stories. Designed by mental health experts, it promotes mindfulness and emotional well-being, making it easy to unwind anytime, anywhere.",
+    "size": 47,
+    "reviews": 12200,
+    "ratingAvg": 4.8,
+    "downloads": 2100000,
+    "ratings": [
+      { "name": "1 star", "count": 250 },
+      { "name": "2 star", "count": 340 },
+      { "name": "3 star", "count": 780 },
+      { "name": "4 star", "count": 2900 },
+      { "name": "5 star", "count": 7930 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/200/200?12",
+    "title": "MusicFlow",
+    "companyName": "BeatStream",
+    "id": 12,
+    "description": "MusicFlow brings your favorite songs, playlists, and podcasts together in one place. Enjoy high-quality streaming, offline playback, and smart recommendations that evolve with your taste. Music has never sounded this personal.",
+    "size": 102,
+    "reviews": 18900,
+    "ratingAvg": 4.7,
+    "downloads": 4800000,
+    "ratings": [
+      { "name": "1 star", "count": 860 },
+      { "name": "2 star", "count": 1150 },
+      { "name": "3 star", "count": 1900 },
+      { "name": "4 star", "count": 4200 },
+      { "name": "5 star", "count": 9790 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/200/200?13",
+    "title": "ShopEase",
+    "companyName": "Ecomix",
+    "id": 13,
+    "description": "ShopEase is your smart shopping assistant that tracks prices, finds deals, and compares products instantly. Save money while shopping online or in-store, and get notified when your favorite items go on sale.",
+    "size": 78,
+    "reviews": 9700,
+    "ratingAvg": 4.2,
+    "downloads": 1900000,
+    "ratings": [
+      { "name": "1 star", "count": 530 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 1150 },
+      { "name": "4 star", "count": 2700 },
+      { "name": "5 star", "count": 4620 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/200/200?14",
+    "title": "TaskHero",
+    "companyName": "Prodify",
+    "id": 14,
+    "description": "TaskHero is a productivity app that transforms to-do lists into daily missions. With AI-powered reminders, streak tracking, and a clean interface, it keeps you focused and motivated to achieve more every day.",
+    "size": 41,
+    "reviews": 5600,
+    "ratingAvg": 4.3,
+    "downloads": 980000,
+    "ratings": [
+      { "name": "1 star", "count": 220 },
+      { "name": "2 star", "count": 380 },
+      { "name": "3 star", "count": 700 },
+      { "name": "4 star", "count": 1900 },
+      { "name": "5 star", "count": 2400 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/200/200?15",
+    "title": "CryptoGuard",
+    "companyName": "BlockSafe",
+    "id": 15,
+    "description": "CryptoGuard helps you monitor your cryptocurrency portfolio securely in real time. Get live alerts, track prices across exchanges, and receive insights to make informed trading decisions — all with top-grade security.",
+    "size": 59,
+    "reviews": 6400,
+    "ratingAvg": 4.1,
+    "downloads": 1250000,
+    "ratings": [
+      { "name": "1 star", "count": 370 },
+      { "name": "2 star", "count": 480 },
+      { "name": "3 star", "count": 840 },
+      { "name": "4 star", "count": 1900 },
+      { "name": "5 star", "count": 2810 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/200/200?16",
+    "title": "RunTracker",
+    "companyName": "MoveFit",
+    "id": 16,
+    "description": "RunTracker helps runners of all levels track routes, distance, and pace with precision GPS data. Set goals, review progress with analytics, and share achievements to stay inspired on your fitness journey.",
+    "size": 64,
+    "reviews": 8900,
+    "ratingAvg": 4.4,
+    "downloads": 1600000,
+    "ratings": [
+      { "name": "1 star", "count": 340 },
+      { "name": "2 star", "count": 490 },
+      { "name": "3 star", "count": 1050 },
+      { "name": "4 star", "count": 2500 },
+      { "name": "5 star", "count": 4520 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/200/200?17",
+    "title": "AI Writer",
+    "companyName": "TextCraft",
+    "id": 17,
+    "description": "AI Writer turns your ideas into polished content instantly. Whether it’s blog posts, essays, or creative stories, its advanced language model helps you write faster, smarter, and with perfect grammar every time.",
+    "size": 57,
+    "reviews": 9500,
+    "ratingAvg": 4.6,
+    "downloads": 2300000,
+    "ratings": [
+      { "name": "1 star", "count": 390 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 950 },
+      { "name": "4 star", "count": 2800 },
+      { "name": "5 star", "count": 4860 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/200/200?18",
+    "title": "HealthSync",
+    "companyName": "VitalTech",
+    "id": 18,
+    "description": "HealthSync connects all your wearable devices to one platform, allowing you to track your steps, heart rate, sleep, and nutrition effortlessly. It visualizes trends to help you make smarter wellness choices every day.",
+    "size": 73,
+    "reviews": 7200,
+    "ratingAvg": 4.3,
+    "downloads": 1400000,
+    "ratings": [
+      { "name": "1 star", "count": 310 },
+      { "name": "2 star", "count": 420 },
+      { "name": "3 star", "count": 890 },
+      { "name": "4 star", "count": 2300 },
+      { "name": "5 star", "count": 3280 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/200/200?19",
+    "title": "DailyQuotes",
+    "companyName": "InspireMe",
+    "id": 19,
+    "description": "DailyQuotes delivers inspiring words and affirmations every morning. Choose from themes like motivation, gratitude, or mindfulness to start your day on a positive note and share the inspiration with friends.",
+    "size": 29,
+    "reviews": 4800,
+    "ratingAvg": 4.7,
+    "downloads": 970000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 230 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 1400 },
+      { "name": "5 star", "count": 2520 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/200/200?20",
+    "title": "FitFuel",
+    "companyName": "NutriSmart",
+    "id": 20,
+    "description": "FitFuel helps you plan balanced meals and track your nutrition effortlessly. It calculates macros, suggests recipes based on your goals, and provides insights to help you stay on track toward a healthier lifestyle.",
+    "size": 55,
+    "reviews": 7200,
+    "ratingAvg": 4.2,
+    "downloads": 1500000,
+    "ratings": [
+      { "name": "1 star", "count": 420 },
+      { "name": "2 star", "count": 540 },
+      { "name": "3 star", "count": 950 },
+      { "name": "4 star", "count": 2300 },
+      { "name": "5 star", "count": 2990 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/200/200?21",
+    "title": "BookHive",
+    "companyName": "LitWorld",
+    "id": 21,
+    "description": "BookHive connects book lovers through reading lists, community reviews, and personalized recommendations. Track your reading progress, join book clubs, and discover hidden literary gems from around the world.",
+    "size": 68,
+    "reviews": 8300,
+    "ratingAvg": 4.5,
+    "downloads": 2000000,
+    "ratings": [
+      { "name": "1 star", "count": 330 },
+      { "name": "2 star", "count": 460 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 2700 },
+      { "name": "5 star", "count": 3910 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/200/200?22",
+    "title": "FocusTime",
+    "companyName": "ClarityApps",
+    "id": 22,
+    "description": "FocusTime uses the Pomodoro technique to help you stay concentrated and productive. With customizable timers, white noise sounds, and focus tracking, it’s perfect for students, creators, and professionals.",
+    "size": 34,
+    "reviews": 5200,
+    "ratingAvg": 4.6,
+    "downloads": 1100000,
+    "ratings": [
+      { "name": "1 star", "count": 160 },
+      { "name": "2 star", "count": 240 },
+      { "name": "3 star", "count": 610 },
+      { "name": "4 star", "count": 1800 },
+      { "name": "5 star", "count": 2390 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/200/200?23",
+    "title": "PetCare+",
+    "companyName": "FurryLabs",
+    "id": 23,
+    "description": "PetCare+ is designed for responsible pet owners to track vaccinations, grooming schedules, and vet visits. It even includes a health diary and reminders, so your furry friend always gets the care they deserve.",
+    "size": 48,
+    "reviews": 4800,
+    "ratingAvg": 4.3,
+    "downloads": 800000,
+    "ratings": [
+      { "name": "1 star", "count": 220 },
+      { "name": "2 star", "count": 310 },
+      { "name": "3 star", "count": 610 },
+      { "name": "4 star", "count": 1600 },
+      { "name": "5 star", "count": 2060 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/200/200?24",
+    "title": "EcoSteps",
+    "companyName": "GreenPlanet",
+    "id": 24,
+    "description": "EcoSteps motivates you to reduce your carbon footprint by tracking eco-friendly habits like walking, recycling, and energy saving. Earn badges for your progress and inspire others to live sustainably.",
+    "size": 36,
+    "reviews": 6200,
+    "ratingAvg": 4.4,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 270 },
+      { "name": "2 star", "count": 350 },
+      { "name": "3 star", "count": 810 },
+      { "name": "4 star", "count": 2100 },
+      { "name": "5 star", "count": 2670 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/200/200?25",
+    "title": "MindMath",
+    "companyName": "BrainSpark",
+    "id": 25,
+    "description": "MindMath sharpens your math skills through fun puzzles and timed challenges. It adapts to your level and provides instant feedback, making learning arithmetic exciting for both students and adults.",
+    "size": 58,
+    "reviews": 7100,
+    "ratingAvg": 4.5,
+    "downloads": 900000,
+    "ratings": [
+      { "name": "1 star", "count": 210 },
+      { "name": "2 star", "count": 340 },
+      { "name": "3 star", "count": 780 },
+      { "name": "4 star", "count": 2400 },
+      { "name": "5 star", "count": 3370 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/200/200?26",
+    "title": "CityGuide",
+    "companyName": "UrbanTech",
+    "id": 26,
+    "description": "CityGuide is your personal navigator for exploring new cities. It provides offline maps, attraction highlights, and local restaurant recommendations, ensuring you never miss a hidden gem on your travels.",
+    "size": 93,
+    "reviews": 9900,
+    "ratingAvg": 4.3,
+    "downloads": 2400000,
+    "ratings": [
+      { "name": "1 star", "count": 520 },
+      { "name": "2 star", "count": 690 },
+      { "name": "3 star", "count": 1120 },
+      { "name": "4 star", "count": 2900 },
+      { "name": "5 star", "count": 4670 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/200/200?27",
+    "title": "LangMaster",
+    "companyName": "LinguaSoft",
+    "id": 27,
+    "description": "LangMaster makes learning new languages intuitive and engaging. With voice recognition, interactive quizzes, and native audio, you’ll gain fluency and confidence faster than ever before.",
+    "size": 82,
+    "reviews": 11800,
+    "ratingAvg": 4.7,
+    "downloads": 3000000,
+    "ratings": [
+      { "name": "1 star", "count": 420 },
+      { "name": "2 star", "count": 570 },
+      { "name": "3 star", "count": 940 },
+      { "name": "4 star", "count": 3100 },
+      { "name": "5 star", "count": 6770 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/200/200?28",
+    "title": "MovieScout",
+    "companyName": "CineCore",
+    "id": 28,
+    "description": "MovieScout recommends movies and shows based on your taste. Browse trending releases, watch trailers, and create personal watchlists — the ultimate app for every film enthusiast.",
+    "size": 88,
+    "reviews": 10500,
+    "ratingAvg": 4.4,
+    "downloads": 2700000,
+    "ratings": [
+      { "name": "1 star", "count": 440 },
+      { "name": "2 star", "count": 590 },
+      { "name": "3 star", "count": 980 },
+      { "name": "4 star", "count": 3000 },
+      { "name": "5 star", "count": 5490 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/200/200?29",
+    "title": "SleepWell",
+    "companyName": "Restify",
+    "id": 29,
+    "description": "SleepWell helps you fall asleep faster with soothing sounds, bedtime stories, and breathing exercises. Its smart sleep tracker analyzes your patterns to improve your rest and overall health.",
+    "size": 63,
+    "reviews": 8800,
+    "ratingAvg": 4.6,
+    "downloads": 1950000,
+    "ratings": [
+      { "name": "1 star", "count": 270 },
+      { "name": "2 star", "count": 390 },
+      { "name": "3 star", "count": 870 },
+      { "name": "4 star", "count": 2600 },
+      { "name": "5 star", "count": 4670 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/200/200?30",
+    "title": "TimeLens",
+    "companyName": "ChronoTech",
+    "id": 30,
+    "description": "TimeLens is an elegant time management app that visualizes your day as a timeline. It integrates tasks, events, and habits into one clean view so you can focus on what truly matters and make every moment count.",
+    "size": 46,
+    "reviews": 7600,
+    "ratingAvg": 4.5,
+    "downloads": 1450000,
+    "ratings": [
+      { "name": "1 star", "count": 280 },
+      { "name": "2 star", "count": 360 },
+      { "name": "3 star", "count": 740 },
+      { "name": "4 star", "count": 2400 },
+      { "name": "5 star", "count": 3820 }
+    ]
   }
 ]
