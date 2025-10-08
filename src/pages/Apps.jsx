@@ -1,14 +1,16 @@
-import React, { useState } from "react";
+// import React,  from "react";
 import { useLoaderData } from "react-router";
 import AppCard from "../components/AppCard";
+import { useState } from "react";
+import ErrorPage from "./ErrorPage";
 
 const Apps = () => {
   const apps = useLoaderData();
   const [search, setSearch] = useState("")
   const term = search.trim().toLocaleLowerCase()
-  const searchedApps = term ? apps.filter(app => app.name.toLocaleLowerCase().includes(term))
+  const searchedApps = term ? apps.filter(app => app.title.toLocaleLowerCase().includes(term))
   : apps
-  console.log(searchedApps)
+  
   return (
     <div>
       <div className="text-center">
@@ -38,7 +40,8 @@ const Apps = () => {
           </svg>
           <input
           value={search}
-          onChange={e=> setSearch(e.target.value)} type="search" required placeholder="Search Apps" />
+          onChange={e=> setSearch(e.target.value)}
+           type="search" required placeholder="Search Apps" />
         </label>
       </div>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6'>

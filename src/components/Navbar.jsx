@@ -1,9 +1,12 @@
 import React from "react";
-import logo from "../assets/logo.png"
-import buttonSign from "../assets/Vector (2).png"
+import logo from "../assets/logo.png";
+import buttonSign from "../assets/Vector (2).png";
 import { Link, NavLink } from "react-router";
 
 const Navbar = () => {
+  const handleOpenGitHub = () => {
+    window.open("https://github.com/SwarnaliSahaBristi");
+  };
   return (
     <div className="navbar bg-base-100 shadow-sm">
       <div className="navbar-start">
@@ -29,24 +32,40 @@ const Navbar = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
-            <li className="font-semibold"><NavLink to='/'>Home</NavLink></li>
-            <li className="font-semibold"><NavLink to='/apps'>Apps</NavLink></li>
-            <li className="font-semibold"><NavLink to='/installation'>Installation</NavLink></li>
+            <li className="font-semibold">
+              <NavLink to="/">Home</NavLink>
+            </li>
+            <li className="font-semibold">
+              <NavLink to="/apps">Apps</NavLink>
+            </li>
+            <li className="font-semibold">
+              <NavLink to="/installation">Installation</NavLink>
+            </li>
           </ul>
         </div>
-        <Link className="btn btn-ghost text-xl text-purple-600 font-bold"><img className="w-[50px] h-[50px]" src={logo} alt="" />HERO.IO</Link>
+        <Link className="btn btn-ghost text-xl text-purple-600 font-bold">
+          <img className="w-[50px] h-[50px]" src={logo} alt="" />
+          HERO.IO
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-            <li className="font-semibold"><NavLink to='/'>Home</NavLink></li>
-            <li className="font-semibold"><NavLink to='/apps'>Apps</NavLink></li>
-            <li className="font-semibold"><NavLink to='/installation'>Installation</NavLink></li>
+          <li className="font-semibold">
+            <NavLink to="/">Home</NavLink>
+          </li>
+          <li className="font-semibold">
+            <NavLink to="/apps">Apps</NavLink>
+          </li>
+          <li className="font-semibold">
+            <NavLink to="/installation">Installation</NavLink>
+          </li>
         </ul>
       </div>
       <div className="navbar-end">
-        <button className="btn text-white rounded-lg bg-gradient-to-l  from-[#9F62F2] to-[#632EE3]">
-            <img src={buttonSign} alt="" />
-            Contribute</button>
+        <button onClick={handleOpenGitHub} className="btn text-white rounded-lg bg-gradient-to-l  from-[#9F62F2] to-[#632EE3]">
+          <img src={buttonSign} alt="" />
+          Contribute
+        </button>
       </div>
     </div>
   );

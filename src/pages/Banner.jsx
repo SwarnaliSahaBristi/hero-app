@@ -4,6 +4,12 @@ import appStore from "../assets/Group (1).png"
 import hero from "../assets/hero.png"
 
 const Banner = () => {
+    const handleGoToPlaystore = () =>{
+        window.open("https://play.google.com/store/games?hl=en")
+    }
+    const handleGoToAppStore = () =>{
+        window.open("https://www.apple.com/app-store/")
+    }
     return (
         <div className=''>
             <div>
@@ -11,10 +17,10 @@ const Banner = () => {
             <p className='text-[#627382] text-center text-lg py-3'>At HERO.IO, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting.Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
             </div>
             <div className='flex justify-center items-center gap-4'>
-                <button className='btn btn-outline'>
+                <button onClick={handleGoToPlaystore} className='btn btn-outline'>
                     <img src={googlePlay}></img>
                     Google Play</button>
-                <button className='btn btn-outline'>
+                <button onClick={handleGoToAppStore} className='btn btn-outline'>
                     <img src={appStore}></img>
                     App Store</button>
             </div>
