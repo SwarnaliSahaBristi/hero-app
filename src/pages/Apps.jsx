@@ -8,12 +8,24 @@ const Apps = () => {
   const apps = useLoaderData();
   const navigate = useNavigate();
   const [search, setSearch] = useState("");
+  let [loading, setLoading] = useState(false);
   const term = search.trim().toLocaleLowerCase()
   const searchedApps = term ? apps.filter(app => app.title.toLocaleLowerCase().includes(term))
   : apps
   useEffect(() => {
-    if (term && searchedApps.length === 0) {
-      navigate("/notfound");
+    if (term) {
+        setLoading(true)
+      
+      const delay = setTimeout(() => {
+        if (searchedApps.length === 0) {
+          navigate("/notfound");
+        }
+        setLoading(false);
+      }, 600);
+
+      return () => clearTimeout(delay);
+    } else {
+      setLoading(false);
     }
   }, [term, searchedApps.length, navigate]);
   
@@ -50,11 +62,21 @@ const Apps = () => {
            type="search" required placeholder="Search Apps" />
         </label>
       </div>
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-12'>
-        {
-            searchedApps.map(app=> <AppCard key={app.id} app={app}></AppCard>)
-        }
-      </div>
+
+      {/* loading */}
+
+      {loading ? (
+        <div className="flex justify-center items-center py-20">
+          <FadeLoader color="#6b46c1" />
+        </div>
+      ) : (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-12">
+          {searchedApps.map((app) => (
+            <AppCard key={app.id} app={app} />
+          ))}
+        </div>
+      )}
+      
     </div>
   );
 };

@@ -33,7 +33,6 @@ const AppDetails = () => {
     ratings,
     description,
   } = app;
-
   useEffect(()=>{
     const existingList = JSON.parse(localStorage.getItem('installation'));
     const isInstalled = existingList?.some((p) => p.id === app.id);
