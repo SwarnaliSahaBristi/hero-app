@@ -20,7 +20,7 @@ const AppDetails = () => {
   const apps = useLoaderData();
   const { id } = useParams();
   const appId = parseInt(id);
-  const app = apps.find((app) => app.id === appId);
+  const app = apps?.find((app) => app.id === appId);
   const [installed, setInstalled] = useState(false);
   
   const {
@@ -36,14 +36,14 @@ const AppDetails = () => {
 
   useEffect(()=>{
     const existingList = JSON.parse(localStorage.getItem('installation'));
-    const isInstalled = existingList.some((p) => p.id === app.id);
+    const isInstalled = existingList?.some((p) => p.id === app.id);
     if (isInstalled) setInstalled(true);
   },[app.id])
   const handleAddToInstallation = () =>{
     const existingList = JSON.parse(localStorage.getItem('installation'))
     let updatedList = [];
     if(existingList){
-        const isDuplicate = existingList.some(p=> p.id === app.id)
+        const isDuplicate = existingList?.some(p=> p.id === app.id)
         if(isDuplicate) return toast.error("Already Installed!!")
         updatedList= [...existingList,app]
     }else{
