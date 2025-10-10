@@ -11,10 +11,10 @@ const Banner = () => {
         window.open("https://www.apple.com/app-store/")
     }
     return (
-        <div className=''>
+        <div className='py-6'>
             <div>
                 <h1 className='font-bold text-5xl text-center'>We Build <br /><span className='text-purple-500'>Productive</span> Apps</h1>
-            <p className='text-[#627382] text-center text-lg py-3'>At HERO.IO, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting.Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
+            <p className='text-[#627382] text-center text-lg p-6'>At HERO.IO, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting.Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
             </div>
             <div className='flex justify-center items-center gap-4'>
                 <button onClick={handleGoToPlaystore} className='btn btn-outline'>
@@ -27,22 +27,22 @@ const Banner = () => {
             <div className='flex justify-center items-center mt-6'>
                 <img className='w-[700px] h-[550px]' src={hero} alt="" />
             </div>
-            <div className='bg-gradient-to-l  from-[#9F62F2] to-[#632EE3]'>
+            <div className='bg-gradient-to-l  from-[#9F62F2] to-[#632EE3] max-w-full'>
                 <div className='text-center'>
                     <h2 className='font-bold text-5xl text-white p-8'>Trusted by Millions, Built for You</h2>
                 </div>
                 <div className='flex md:flex-row flex-col justify-around text-white items-center p-8 text-center'>
-                    <div className=''>
+                    <div className='bg-purple-600 p-4 rounded-2xl'>
                         <h1 className='text-lg'>Total Downloads</h1>
                         <p className='font-bold text-2xl p-3'>29.6M</p>
                         <p>21% more than last month</p>
                     </div>
-                    <div>
+                    <div className='bg-violet-900 p-4 rounded-2xl'>
                         <h1 className='text-lg'>Total Reviews</h1>
                         <p className='font-bold text-2xl p-3'>906K</p>
                         <p>46% more than last month</p>
                     </div>
-                    <div>
+                    <div className='bg-pink-500 px-8 py-4 rounded-2xl'>
                         <h1 className='text-lg'>Active Apps</h1>
                         <p className='font-bold text-2xl p-3'>132+</p>
                         <p>31 more will Launch</p>

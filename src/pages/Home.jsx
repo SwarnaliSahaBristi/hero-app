@@ -1,8 +1,8 @@
 import React from 'react';
 import Banner from './Banner';
-// import useApps from '../hooks/useCards';
 import { Link, useLoaderData } from 'react-router';
 import AppCard from '../components/AppCard';
+import { ToastContainer } from 'react-toastify';
 
 const Home = () => {
     const apps = useLoaderData();
@@ -14,7 +14,7 @@ const Home = () => {
                 <h1 className='font-bold text-4xl'>Trending Apps</h1>
                 <p className='text-gray-400 p-2'>Explore All Trending Apps on the Market developed by us</p>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-12'>
                 {
                     featuredApps.map(app=> <AppCard key={app.id} app={app}></AppCard>)
                 }

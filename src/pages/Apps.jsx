@@ -1,25 +1,31 @@
 // import React,  from "react";
-import { useLoaderData } from "react-router";
+import { Navigate, useLoaderData, useNavigate } from "react-router";
 import AppCard from "../components/AppCard";
-import { useState } from "react";
-import ErrorPage from "./ErrorPage";
+import { useEffect, useState } from "react";
+import { FadeLoader } from "react-spinners";
 
 const Apps = () => {
   const apps = useLoaderData();
-  const [search, setSearch] = useState("")
+  const navigate = useNavigate();
+  const [search, setSearch] = useState("");
   const term = search.trim().toLocaleLowerCase()
   const searchedApps = term ? apps.filter(app => app.title.toLocaleLowerCase().includes(term))
   : apps
+  useEffect(() => {
+    if (term && searchedApps.length === 0) {
+      navigate("/notfound");
+    }
+  }, [term, searchedApps.length, navigate]);
   
   return (
     <div>
-      <div className="text-center">
+      <div className="text-center mt-6">
         <h2 className="font-bold text-4xl">Our All Applications</h2>
         <p className="text-gray-400 p-4">
           Explore All Apps on the Market developed by us. We code for Millions
         </p>
       </div>
-      <div className="flex justify-between py-5 items-center">
+      <div className="flex justify-between py-5 items-center px-12">
         <span className="text-xl font-bold">({searchedApps.length})Apps found</span>
         <label className="input">
           <svg
@@ -44,7 +50,7 @@ const Apps = () => {
            type="search" required placeholder="Search Apps" />
         </label>
       </div>
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6'>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-12'>
         {
             searchedApps.map(app=> <AppCard key={app.id} app={app}></AppCard>)
         }

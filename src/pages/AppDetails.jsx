@@ -1,27 +1,68 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router";
 import downloadImg from "../assets/icon-downloads.png";
 import reviewImg from "../assets/icon-ratings.png";
 import iconReview from "../assets/icon-review.png";
-import { Bar, BarChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+import {
+  Bar,
+  BarChart,
+  CartesianGrid,
+  Legend,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis,
+} from "recharts";
+import { toast } from "react-toastify";
+
 
 const AppDetails = () => {
   const apps = useLoaderData();
   const { id } = useParams();
   const appId = parseInt(id);
   const app = apps.find((app) => app.id === appId);
-  const { image, title, companyName, downloads, reviews, ratingAvg, ratings, description } = app;
-  console.log(app);
+  const [installed, setInstalled] = useState(false);
+  
+  const {
+    image,
+    title,
+    companyName,
+    downloads,
+    reviews,
+    ratingAvg,
+    ratings,
+    description,
+  } = app;
+
+  useEffect(()=>{
+    const existingList = JSON.parse(localStorage.getItem('installation'));
+    const isInstalled = existingList.some((p) => p.id === app.id);
+    if (isInstalled) setInstalled(true);
+  },[app.id])
+  const handleAddToInstallation = () =>{
+    const existingList = JSON.parse(localStorage.getItem('installation'))
+    let updatedList = [];
+    if(existingList){
+        const isDuplicate = existingList.some(p=> p.id === app.id)
+        if(isDuplicate) return toast.error("Already Installed!!")
+        updatedList= [...existingList,app]
+    }else{
+        updatedList.push(app)
+    }
+    localStorage.setItem('installation', JSON.stringify(updatedList))
+    toast.success("App Installed!!")
+    setInstalled(true);
+  }
   return (
-    <div>
+    <div className="px-12 mt-8">
       <div className="flex gap-10">
         <div>
           <img src={image} alt="" />
         </div>
         <div>
           <h2 className="font-bold text-3xl">{title}</h2>
-          <p className="font semi-bold text-xl py-4">
-            Company Name: {companyName}
+          <p className="font semi-bold text-xl py-4 text-gray-400">
+            Developed By: {companyName}
           </p>
           <div className="flex gap-15">
             <div>
@@ -40,9 +81,8 @@ const AppDetails = () => {
               <p className="font-bold text-xl text-green-600">{reviews}</p>
             </div>
           </div>
-
-          <button className="btn bg-green-500 text-white px-8 py-4 mt-5">
-            Install
+          <button onClick={()=>handleAddToInstallation()} className={`btn px-8 py-4 mt-5 text-white ${installed ? "bg-gray-400" : "bg-green-500"}`}>
+            {installed ? "Installed" : "Install"}
           </button>
         </div>
       </div>
