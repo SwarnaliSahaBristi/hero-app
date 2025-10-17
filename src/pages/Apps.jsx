@@ -9,13 +9,13 @@ const Apps = () => {
   const navigate = useNavigate();
   const [search, setSearch] = useState("");
   let [loading, setLoading] = useState(false);
-  const term = search.trim().toLocaleLowerCase()
-  const searchedApps = term ? apps.filter(app => app.title.toLocaleLowerCase().includes(term))
-  : apps
+  const term = search.trim().toLocaleLowerCase();
+  const searchedApps = term
+    ? apps.filter((app) => app.title.toLocaleLowerCase().includes(term))
+    : apps;
   useEffect(() => {
     if (term) {
-        setLoading(true)
-      
+      setLoading(true);
       const delay = setTimeout(() => {
         if (searchedApps.length === 0) {
           navigate("/notfound");
@@ -28,7 +28,7 @@ const Apps = () => {
       setLoading(false);
     }
   }, [term, searchedApps.length, navigate]);
-  
+
   return (
     <div>
       <div className="text-center mt-6">
@@ -38,7 +38,9 @@ const Apps = () => {
         </p>
       </div>
       <div className="flex justify-between py-5 items-center px-12">
-        <span className="text-xl font-bold">({searchedApps.length})Apps found</span>
+        <span className="text-xl font-bold">
+          ({searchedApps.length})Apps found
+        </span>
         <label className="input">
           <svg
             className="h-[1em] opacity-50"
@@ -57,9 +59,12 @@ const Apps = () => {
             </g>
           </svg>
           <input
-          value={search}
-          onChange={e=> setSearch(e.target.value)}
-           type="search" required placeholder="Search Apps" />
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            type="search"
+            required
+            placeholder="Search Apps"
+          />
         </label>
       </div>
 
@@ -76,7 +81,6 @@ const Apps = () => {
           ))}
         </div>
       )}
-      
     </div>
   );
 };
